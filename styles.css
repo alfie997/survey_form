@@ -1,4 +1,5 @@
 body {
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     font-family: 'Poppins', sans-serif;
     color: white;
     padding: 0;
@@ -11,17 +12,37 @@ body {
     height: 100%;
     background: blue;
     opacity: 40%;
-}
-
-img {
-    width: 100%;
-    height: 100%;
+    top: 0;
 }
 
 .form-box {
+    width: 700px;
+    margin: 0 auto;
     background: darkblue;
     opacity: 80%;
+    border-radius: 4px;
 }
+
+#survey-form {
+    padding: 40px;
+}
+
+input, textarea, select {
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+label.small {
+    display: inline;
+}
+
+/* .inline {
+    width: unset;
+    display: inline-block;
+} */
 
 #title, #description {
     text-align: center;
