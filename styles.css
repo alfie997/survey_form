@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Poppins', sans-serif;
+    font-size: 110%;
     color: #f3f3f3;
     padding: 0;
     margin: 0;
@@ -13,20 +14,18 @@ header {
     position: relative;
 }
 
-.background {
+.back {
+    background: rgba(36, 36, 208, 0.4);
     position: fixed;
     width: 100%;
     height: 100%;
-    background: darkblue;
-    opacity: 50%;
-    top: 0;
+    overflow: auto;
 }
 
 .form-box {
     width: 700px;
     margin: 0 auto;
     background: rgba(27, 27, 50, 0.8);
-    opacity: 80%;
     border-radius: 4px;
 }
 
@@ -38,26 +37,38 @@ input, textarea, select {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    font-family: inherit;
+    font-size: 90%;
+    margin-top: 8px;
 }
 
 label {
     display: block;
 }
 
-.label-box {
+.label-box, .label-box2 {
     margin-bottom: 25px;
 }
 
 .inline {
     width: unset;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    margin: 0 10px 10px 0;
 }
 
 #title, #description {
     text-align: center;
 }
 
+#title {
+    font-size: 1.9rem;
+}
+
 #description {
     font-style: italic;
+    bottom: 15px;
+    position: relative;
 }
 
 input {
@@ -65,23 +76,32 @@ input {
     border-radius: 3px;
 }
 
-input:focus {
-    border: 3px solid darkblue;
-    outline: none;
+.label-box input:focus, select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+select:hover {
 }
 
 textarea {
     width: 100%;
-    height: 100px;
-    font-family: 'Poppins', sans-serif;
+    height: 120px;
 }
 
 button {
     width: 100%;
-    height: 40px;
-    margin-top: 20px;
+    height: 45px;
+    margin-top: 25px;
     color: white;
     background: #37af65;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 90%;
+}
+
+.tiny {
+    opacity: 90%;
 }
