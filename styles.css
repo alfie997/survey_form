@@ -53,6 +53,10 @@ label {
     margin-bottom: 24px;
 }
 
+.input-box {
+    margin-top: 8px
+}
+
 .inline {
     width: unset;
     min-width: 1.25rem;
@@ -65,18 +69,19 @@ label {
 }
 
 #title {
-    font-size: 1.9rem;
+    font-size: 2rem;
+    font-weight: normal;
 }
 
 #description {
     font-style: italic;
-    bottom: 15px;
+    bottom: 20px;
     position: relative;
 }
 
 input {
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .label-box input:focus, select:focus {
@@ -109,15 +114,34 @@ button {
 
 .tiny {
     opacity: 90%;
+    margin-left: 0.25rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     body {
-        background-size: 150%;
-        background-position: 45%;
+        background-size: 1100px;
+        background-position: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        background-size: 1100px;
+        background-position: 50%;
     }
     
     .form-box {
         width: 540px;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        background-size: 1100px;
+        background-position: 50%;
+    }
+
+    .form-box {
+        width: 100%;
     }
 }
